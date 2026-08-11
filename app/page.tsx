@@ -51,7 +51,7 @@ export default async function ResumenPage() {
           <Card
             title="Lecciones"
             action={
-              <Link href="/clases" className="text-xs font-medium text-(--brand) hover:underline">
+              <Link href="/clases" className="-my-2 -mr-2 rounded-md px-2 py-2 text-xs font-medium text-(--brand) hover:underline">
                 Ver todas
               </Link>
             }

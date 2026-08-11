@@ -82,7 +82,7 @@ export function PracticarView({ scenario }: { scenario: Scenario }) {
           <button
             type="button"
             onClick={() => setRevealed(true)}
-            className="mt-3 w-fit text-xs font-medium text-(--brand) hover:underline"
+            className="-mx-2 mt-3 w-fit rounded-md px-2 py-2 text-xs font-medium text-(--brand) hover:underline"
           >
             Ver respuesta modelo
           </button>
