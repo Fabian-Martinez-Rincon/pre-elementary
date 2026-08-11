@@ -15,7 +15,15 @@ export default async function DrillPage({ params }: { params: Promise<{ id: stri
 
       {drill.image && (
         <div className="mb-4 overflow-hidden rounded-(--radius) border border-(--line) shadow-(--shadow)">
-          <Image src={drill.image.src} alt={drill.image.alt} width={1600} height={900} className="h-auto w-full" priority />
+          <Image
+            src={drill.image.src}
+            alt={drill.image.alt}
+            width={1600}
+            height={900}
+            sizes="(min-width: 672px) 672px, 100vw"
+            className="h-auto w-full"
+            preload
+          />
         </div>
       )}
 

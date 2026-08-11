@@ -19,7 +19,14 @@ export default async function ScenarioPage({ params }: { params: Promise<{ id: s
           <div className="mt-3 flex flex-col gap-3">
             {scenario.images.map((img) => (
               <div key={img.src} className="overflow-hidden rounded-md border border-(--line)">
-                <Image src={img.src} alt={img.alt} width={1600} height={900} className="h-auto w-full" />
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={1600}
+                  height={900}
+                  sizes="(min-width: 672px) 672px, 100vw"
+                  className="h-auto w-full"
+                />
               </div>
             ))}
           </div>
