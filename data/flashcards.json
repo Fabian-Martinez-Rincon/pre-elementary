@@ -1,0 +1,2150 @@
+{
+  "cards": [
+    {
+      "id": "776ff4cd-0f9b-41e5-94dd-e6a133cd217a",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Hello!",
+      "back": "¡Hola! (saludo neutro/formal)",
+      "example": "Hello! Nice to meet you.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "8319a3a5-2725-45d3-b4c0-ff3ca9c1f129",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Hi! How are you?",
+      "back": "¡Hola! ¿Cómo estás?",
+      "example": "Hi! How are you today?",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "1e8e0214-749b-40e9-aa2f-6880de53e88f",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Fine, thanks. And you?",
+      "back": "Bien, gracias. ¿Y vos?",
+      "example": "A: How are you? B: Fine, thanks. And you?",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "95ad1acb-5f5e-4d08-9f1a-0ea7d66614e0",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm great.",
+      "back": "Estoy muy bien.",
+      "example": "I'm great, thank you for asking.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4fa63ca5-efd9-4919-bd3c-c88e6c20f0d9",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm good.",
+      "back": "Estoy bien.",
+      "example": "I'm good, thanks.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "912fa4c4-3428-445e-9e09-4b006d6303b6",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm fantastic!",
+      "back": "¡Estoy genial!",
+      "example": "I'm fantastic today!",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "247bfb87-6eab-4011-8743-4feede9b5060",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Not so good.",
+      "back": "No muy bien.",
+      "example": "A: How are you? B: Not so good.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "76996bfa-2e32-4dcc-a629-de924be08b33",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Not that great.",
+      "back": "No tan bien.",
+      "example": "A: How are you? B: Not that great, I'm tired.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "b600a668-0204-4e36-af38-7f0211c288aa",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Can't complain.",
+      "back": "No me puedo quejar.",
+      "example": "A: How are you? B: Can't complain.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "033d71b3-da99-426d-8579-f68609e4f7b6",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "What's your name?",
+      "back": "¿Cómo te llamás? / ¿Cuál es tu nombre?",
+      "example": "Hello! What's your name?",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "1f13ee54-9bc4-4970-ad59-e8acbdc4a887",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "My name is... / I'm...",
+      "back": "Me llamo... / Soy...",
+      "example": "My name is Sarah. I'm from Argentina.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c9ee6a14-9ca8-4171-94e5-e7b64bf25681",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Could you spell your last name, please?",
+      "back": "¿Podrías deletrear tu apellido, por favor?",
+      "example": "Could you spell your last name, please? - Sure, it's S-M-I-T-H.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ba34ba57-f6bd-4b19-89e1-2cd7c83e4dce",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Where are you from?",
+      "back": "¿De dónde sos?",
+      "example": "Where are you from? - I'm from Argentina.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "83f58800-824f-4c05-80a9-a1be59775d68",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm from Argentina.",
+      "back": "Soy de Argentina.",
+      "example": "I'm from Argentina, and you?",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4740e0f6-46da-4262-a065-47036c5deb65",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm Argentinian.",
+      "back": "Soy argentino/a.",
+      "example": "I'm Argentinian. I was born in Buenos Aires.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "0077f450-4e48-48f0-bdeb-482e2034e9a4",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "How old are you?",
+      "back": "¿Cuántos años tenés?",
+      "example": "How old are you? - I'm 26 years old.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "80e1a0db-09e3-4580-add0-ee37829eecda",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm 26 (years old).",
+      "back": "Tengo 26 años.",
+      "example": "I'm 26 years old.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "98655dc2-4e02-4b26-ab85-1ae6c38fa31a",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "What's your job?",
+      "back": "¿A qué te dedicás? / ¿Cuál es tu trabajo?",
+      "example": "What's your job? - I'm a doctor.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2a65b8bd-238d-4d3d-b489-48033b042118",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "I'm a doctor.",
+      "back": "Soy médico/a.",
+      "example": "I'm a doctor. I work at a hospital.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "651b69e4-fc9b-4028-aa11-0bc4f94feb35",
+      "lesson": "Lesson 1 - Let's Warm Up",
+      "front": "Nice to meet you.",
+      "back": "Mucho gusto / Encantado de conocerte.",
+      "example": "Hi, I'm Sarah. Nice to meet you!",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "33b25a09-2ca1-4353-b2d9-d66ee2026d88",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "Where are you from?",
+      "back": "¿De dónde sos? (para preguntar el origen de alguien, con be)",
+      "example": "Where are you from? - I am from Ghana.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a7631203-6699-40ac-9653-3d5d39f84b62",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "I am from Ghana. / He is from Chile.",
+      "back": "Soy de Ghana. / Él es de Chile.",
+      "example": "Q: Where is he from? A: He is from Chile.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "79dc1066-921c-4e77-abff-8b561cf5fea4",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "Japan",
+      "back": "Japón",
+      "example": "I'm from Japan.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "eaffcc48-cc10-4923-8cdc-2b1e9bc122f5",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "Germany",
+      "back": "Alemania",
+      "example": "She is from Germany.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "f7612119-7ac2-4e7b-83ce-e444872b7719",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "Mexico",
+      "back": "México",
+      "example": "They are from Mexico.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "6e7ce122-5a35-4dcb-a720-93f2b255d7ac",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "the United States",
+      "back": "Estados Unidos",
+      "example": "She's from the United States.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "84f8c7fb-4c48-4b0c-9b88-8d576a14204e",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "sew",
+      "back": "coser",
+      "example": "She doesn't like to sew.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c261c477-f2a5-495e-b85e-c14c683caed6",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "shop",
+      "back": "ir de compras",
+      "example": "I like to shop on weekends.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2d2f91e4-8926-4acb-82d5-fb200884bb67",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "watch (sports, TV)",
+      "back": "mirar (deportes, TV)",
+      "example": "He likes to watch TV.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7a7c5540-6f59-4692-943e-255240228b80",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "play (soccer, the violin)",
+      "back": "jugar (al fútbol) / tocar (el violín)",
+      "example": "I like to play soccer.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "06205049-dd46-4aa6-af98-31e7966c01d7",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "cook",
+      "back": "cocinar",
+      "example": "I like to cook.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "8344ed15-3993-4707-97fe-edbe78eeaed5",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "listen (to music)",
+      "back": "escuchar (música)",
+      "example": "She likes to listen to music.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a039f52f-50a1-4be5-8b60-bc90197860db",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "travel",
+      "back": "viajar",
+      "example": "She likes to travel and so do I.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4833bae5-7a33-4ce3-8853-adc3131ac755",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "sing",
+      "back": "cantar",
+      "example": "He likes to sing.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "0050f8ac-99f4-4db6-abfd-4653a85eec8f",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "What do you like to do?",
+      "back": "¿Qué te gusta hacer?",
+      "example": "What do you like to do? - I like to cook.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2dae1eeb-268e-499c-bbc7-7df71b1584cd",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "I like to cook.",
+      "back": "Me gusta cocinar.",
+      "example": "I like to cook on Sundays.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "939a01a5-ae12-41fb-aba1-99adeb496ac6",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "He likes to watch TV.",
+      "back": "A él le gusta mirar TV.",
+      "example": "What does he like to do? He likes to watch TV.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "61171222-1154-401e-b55d-285c092084f5",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "She doesn't like to sew.",
+      "back": "A ella no le gusta coser.",
+      "example": "What doesn't she like to do? She doesn't like to sew.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "8e73d56e-e56d-4e35-9694-c9d6b705ba0d",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "This is my friend...",
+      "back": "Esta/Este es mi amigo/a...",
+      "example": "This is my friend Ashley. She's from the United States.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4cd56272-ed3b-486e-8a41-b06efbd0de8c",
+      "lesson": "Lesson 2 - Introductions",
+      "front": "So do I.",
+      "back": "Yo también.",
+      "example": "She likes to travel and so do I.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e9aaa33b-358f-48df-b0a2-954a62275f54",
+      "lesson": "Lesson 3",
+      "front": "swim",
+      "back": "nadar",
+      "example": "I like swimming.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "75ccca65-c299-411c-96fa-bb12d66a4f7e",
+      "lesson": "Lesson 3",
+      "front": "play (sports, games)",
+      "back": "jugar (deportes, juegos)",
+      "example": "They like playing games.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7d80371c-9f62-43d1-a09f-bb33a20611c9",
+      "lesson": "Lesson 3",
+      "front": "write",
+      "back": "escribir",
+      "example": "I like writing.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "0c12c7e6-4ced-42ea-8117-c4a0ed59eb19",
+      "lesson": "Lesson 3",
+      "front": "paint",
+      "back": "pintar",
+      "example": "He likes painting because it's relaxing.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "26d4d879-6075-4781-96ab-3b648261fae5",
+      "lesson": "Lesson 3",
+      "front": "jog",
+      "back": "trotar / hacer jogging",
+      "example": "I like jogging in the morning.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "380e4529-fbd5-4647-acbd-008d92e1636c",
+      "lesson": "Lesson 3",
+      "front": "dance",
+      "back": "bailar",
+      "example": "He likes dancing, but he is a terrible dancer.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "d76fdfff-ec11-4e07-920e-405c5fe20b87",
+      "lesson": "Lesson 3",
+      "front": "read",
+      "back": "leer",
+      "example": "I don't like reading because it's boring.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "dc4f60f5-3866-44dc-8d43-3739b6579d33",
+      "lesson": "Lesson 3",
+      "front": "amazing",
+      "back": "increíble / asombroso",
+      "example": "This book is amazing.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "bbaaa0e2-43f5-4b62-8362-1b0000a18dc6",
+      "lesson": "Lesson 3",
+      "front": "boring",
+      "back": "aburrido",
+      "example": "I don't like reading because it's boring.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2070b502-5272-4178-bc96-aad01aee97a6",
+      "lesson": "Lesson 3",
+      "front": "challenging",
+      "back": "desafiante",
+      "example": "He likes playing soccer because it's challenging.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "42e41c27-0d72-4a4e-a2a1-96e1dcad37d9",
+      "lesson": "Lesson 3",
+      "front": "difficult",
+      "back": "difícil",
+      "example": "She doesn't like swimming because it's difficult.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c640340f-0b9d-4b6c-b7e0-63cf17e868ee",
+      "lesson": "Lesson 3",
+      "front": "easy",
+      "back": "fácil",
+      "example": "This exercise is easy.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "34d960bc-c1fe-4bb0-b83f-027a16148ce4",
+      "lesson": "Lesson 3",
+      "front": "fun",
+      "back": "divertido",
+      "example": "He likes playing sports because it's fun.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "80a6b316-f803-46a8-9137-a5542c54e704",
+      "lesson": "Lesson 3",
+      "front": "interesting",
+      "back": "interesante",
+      "example": "I like reading because it's interesting.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "eb1dab85-b7d1-4ef9-9978-443d7be163fe",
+      "lesson": "Lesson 3",
+      "front": "relaxing",
+      "back": "relajante",
+      "example": "He likes painting because it's relaxing.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "b659f36e-8421-4f68-9edc-4ea1707c998f",
+      "lesson": "Lesson 3",
+      "front": "tiring",
+      "back": "cansador",
+      "example": "I don't like playing sports because it's tiring.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "50c9e648-a06a-49c6-8d73-85554a915933",
+      "lesson": "Lesson 3",
+      "front": "wonderful",
+      "back": "maravilloso",
+      "example": "This trip was wonderful.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a922a153-45e5-4337-8191-e89a5de47890",
+      "lesson": "Lesson 3",
+      "front": "What do you like doing?",
+      "back": "¿Qué te gusta hacer?",
+      "example": "What do you like doing? - I like reading.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "3c32d6ea-c13b-471a-88f1-dd4fccd41094",
+      "lesson": "Lesson 3",
+      "front": "I like reading.",
+      "back": "Me gusta leer.",
+      "example": "I like reading in the evening.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "5a85a2b6-fd99-443a-9f35-5b8d86157c63",
+      "lesson": "Lesson 3",
+      "front": "She doesn't like swimming.",
+      "back": "A ella no le gusta nadar.",
+      "example": "What doesn't she like doing? She doesn't like swimming.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e9033168-1201-4f4a-888c-acd1671a07b7",
+      "lesson": "Lesson 3",
+      "front": "Why do you like reading?",
+      "back": "¿Por qué te gusta leer?",
+      "example": "Why do you like reading? - I like reading because it's interesting.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ab0700c6-dd2a-42bf-9914-eb062f9841a5",
+      "lesson": "Lesson 3",
+      "front": "I like reading because it's interesting.",
+      "back": "Me gusta leer porque es interesante.",
+      "example": "I like reading because it's interesting.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ccf57a2a-f0f4-4147-865c-c7d721ffeffa",
+      "lesson": "Lesson 3",
+      "front": "Why doesn't she like swimming?",
+      "back": "¿Por qué a ella no le gusta nadar?",
+      "example": "Why doesn't she like swimming? - She doesn't like swimming because it's difficult.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "384adc0c-859c-46c0-952a-924549d2694c",
+      "lesson": "Lesson 3",
+      "front": "Because it's relaxing.",
+      "back": "Porque es relajante.",
+      "example": "Why does he like painting? Because it's relaxing.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "63b3987f-af10-48f2-b84f-d3f003349365",
+      "lesson": "Lesson 7 - Food II",
+      "front": "oil",
+      "back": "aceite",
+      "example": "Add the oil to the pan.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a5ddf96c-d212-43e4-9721-576fa66b4d73",
+      "lesson": "Lesson 7 - Food II",
+      "front": "salt",
+      "back": "sal",
+      "example": "Add a little salt.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "18bde1d1-3b87-4095-bdf4-735da30f8d4c",
+      "lesson": "Lesson 7 - Food II",
+      "front": "pan",
+      "back": "sartén / cacerola",
+      "example": "Cook the pancakes in a pan.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4fa7f9ea-6e7d-4793-93a7-07943ab55a31",
+      "lesson": "Lesson 7 - Food II",
+      "front": "stove/oven",
+      "back": "cocina/hornalla / horno",
+      "example": "Heat the pan on the stove.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "db6399ef-0d01-4a9a-86d1-4523e2954505",
+      "lesson": "Lesson 7 - Food II",
+      "front": "flour",
+      "back": "harina",
+      "example": "You need flour, eggs, and water.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "282a2c52-8380-4759-ae82-2971f38539c0",
+      "lesson": "Lesson 7 - Food II",
+      "front": "sugar",
+      "back": "azúcar",
+      "example": "Add two cups of sugar.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "16afc107-0126-4fc7-96f8-ab026f011f87",
+      "lesson": "Lesson 7 - Food II",
+      "front": "spoon",
+      "back": "cuchara",
+      "example": "Stir the mixture with a spoon.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "89f184dd-d6cd-44ab-9d9e-44fb58aa39b6",
+      "lesson": "Lesson 7 - Food II",
+      "front": "knife",
+      "back": "cuchillo",
+      "example": "Cut the bread with a knife.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7dfff28c-52ac-4215-83d8-82f036a5e39a",
+      "lesson": "Lesson 7 - Food II",
+      "front": "plate",
+      "back": "plato",
+      "example": "Put the food on a plate.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7b0a0260-b052-4da9-9b2e-a3320ae96b52",
+      "lesson": "Lesson 7 - Food II",
+      "front": "bowls",
+      "back": "tazones / bowls",
+      "example": "Mix the eggs in a bowl.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4491a39c-5d24-4219-8ddb-9cf06c2ad119",
+      "lesson": "Lesson 7 - Food II",
+      "front": "fork",
+      "back": "tenedor",
+      "example": "Eat the salad with a fork.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "487f7e38-6f50-4b33-8301-f1377070d379",
+      "lesson": "Lesson 7 - Food II",
+      "front": "napkins",
+      "back": "servilletas",
+      "example": "Pass me a napkin, please.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e7f3f2f7-b8e8-4d53-8509-b608c2c742c0",
+      "lesson": "Lesson 7 - Food II",
+      "front": "glass",
+      "back": "vaso",
+      "example": "Fill the glass with water.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "d54be31b-6175-47d0-8009-b0009bf2b07c",
+      "lesson": "Lesson 7 - Food II",
+      "front": "add",
+      "back": "agregar",
+      "example": "Add the milk. Next, add the flour.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "1d710ac0-471e-4435-9eed-6a0d3734c5af",
+      "lesson": "Lesson 7 - Food II",
+      "front": "boil",
+      "back": "hervir",
+      "example": "First, boil the sugar and water.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "52be67e6-b24d-42af-9b41-b512fe5a5290",
+      "lesson": "Lesson 7 - Food II",
+      "front": "heat",
+      "back": "calentar",
+      "example": "Heat the pan on the stove.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c4cee3c6-2af3-4863-aa67-819707a83cb9",
+      "lesson": "Lesson 7 - Food II",
+      "front": "stir",
+      "back": "revolver / mezclar",
+      "example": "Stir the oil and water with the flour.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "9597cf78-dd87-4178-a6e7-8200e2dec746",
+      "lesson": "Lesson 7 - Food II",
+      "front": "chop",
+      "back": "picar / cortar en trozos",
+      "example": "Chop the vegetables.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "261f84d6-ba4d-4ab2-8018-38e23c33ce4a",
+      "lesson": "Lesson 7 - Food II",
+      "front": "bake",
+      "back": "hornear",
+      "example": "Bake the cake for 30 minutes.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "201c5030-c964-43d2-8b9f-24364a7e8585",
+      "lesson": "Lesson 7 - Food II",
+      "front": "mix",
+      "back": "mezclar",
+      "example": "Mix the bananas with the eggs.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2f3c0729-7854-44ff-8ad9-c0f9955a83b0",
+      "lesson": "Lesson 7 - Food II",
+      "front": "put",
+      "back": "poner",
+      "example": "First, put the cheese on the bread.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a16fd819-a028-4614-af6e-d1ec5d2d5641",
+      "lesson": "Lesson 7 - Food II",
+      "front": "What are the ingredients for bread?",
+      "back": "¿Cuáles son los ingredientes para el pan?",
+      "example": "What are the ingredients for bread? - You need flour, eggs, and water.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "27db47d5-5359-4574-8e24-454879497a8b",
+      "lesson": "Lesson 7 - Food II",
+      "front": "You need flour, eggs, and water.",
+      "back": "Necesitás harina, huevos y agua.",
+      "example": "What are the ingredients for a cheese sandwich? You need bread, butter, and cheese.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "d7b6e7d7-0616-47ec-b7f9-1d3774605c32",
+      "lesson": "Lesson 7 - Food II",
+      "front": "How do you make it?",
+      "back": "¿Cómo se hace?",
+      "example": "How do you make a cheese sandwich? It's easy.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c6157393-33c1-4ea4-b955-7a02bc7c3f9d",
+      "lesson": "Lesson 7 - Food II",
+      "front": "First, ... Then, ... Last, ...",
+      "back": "Primero,... Luego,... Por último,... (para describir los pasos de una receta)",
+      "example": "First, put the cheese on the bread. Then, add the oil to the pan. Last, cook the sandwich.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "eda2b50d-8bd8-477a-8c05-9c673fa7a02e",
+      "lesson": "Lesson 7 - Food II",
+      "front": "What are the ingredients for banana pancakes?",
+      "back": "¿Cuáles son los ingredientes para los panqueques de banana?",
+      "example": "A: What are the ingredients for banana pancakes? B: You need eggs, milk, bananas, and flour.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e6072ab2-3d18-4317-84aa-8f18412e23ed",
+      "lesson": "Lesson 8 - Money",
+      "front": "coat",
+      "back": "abrigo / tapado",
+      "example": "This coat is expensive.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "d4526cc8-3754-4651-a4d6-dad86402b6ab",
+      "lesson": "Lesson 8 - Money",
+      "front": "dress",
+      "back": "vestido",
+      "example": "This dress is $50.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2c2963e1-bdb3-4fde-a9b7-046c9b97013e",
+      "lesson": "Lesson 8 - Money",
+      "front": "pants",
+      "back": "pantalones",
+      "example": "How much do those pants cost?",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "5a86fed8-d86d-4807-b6c6-5fabe96a7e8f",
+      "lesson": "Lesson 8 - Money",
+      "front": "shirt",
+      "back": "camisa",
+      "example": "How much is this shirt? It's $12.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ac5e036f-aab1-4d13-935e-1f5bc8efc8f3",
+      "lesson": "Lesson 8 - Money",
+      "front": "shoes",
+      "back": "zapatos / zapatillas",
+      "example": "How much are those shoes? They're $25.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "5359f1a0-8166-41d8-835e-489f70275dc2",
+      "lesson": "Lesson 8 - Money",
+      "front": "tie",
+      "back": "corbata",
+      "example": "I want to buy a tie.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "3ca71cd1-23ee-44b2-9065-9c2968d3c297",
+      "lesson": "Lesson 8 - Money",
+      "front": "car",
+      "back": "auto",
+      "example": "How much does the car cost? It costs $9,000.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ec3ca7fc-ad78-401c-8333-b24c9d41513e",
+      "lesson": "Lesson 8 - Money",
+      "front": "phone",
+      "back": "teléfono / celular",
+      "example": "How much does this phone cost? It costs five hundred dollars.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "3a137e12-aa47-4f97-8d54-a30b68fb24e7",
+      "lesson": "Lesson 8 - Money",
+      "front": "cheap",
+      "back": "barato",
+      "example": "This T-shirt is cheap.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "1ba7b9f4-0726-474c-8bae-2909bc470e85",
+      "lesson": "Lesson 8 - Money",
+      "front": "expensive",
+      "back": "caro",
+      "example": "This laptop is expensive.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "bb5fc7a7-d987-4cc4-9767-e608b35ba138",
+      "lesson": "Lesson 8 - Money",
+      "front": "good",
+      "back": "bueno",
+      "example": "These headphones are good.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4faa2d8f-d655-4d37-80c0-c18593d7953b",
+      "lesson": "Lesson 8 - Money",
+      "front": "bad",
+      "back": "malo",
+      "example": "This phone is bad. It doesn't work well.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2dfedbf4-a2d4-4b52-bc70-ad419a0f777e",
+      "lesson": "Lesson 8 - Money",
+      "front": "ugly",
+      "back": "feo",
+      "example": "This mug is ugly.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "67d3ade7-9c04-401c-9330-a65f6536ec09",
+      "lesson": "Lesson 8 - Money",
+      "front": "pretty",
+      "back": "lindo / bonito",
+      "example": "This bag is pretty.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "19b2da85-224a-4367-a221-d5593edd0d5f",
+      "lesson": "Lesson 8 - Money",
+      "front": "cost",
+      "back": "costar",
+      "example": "This jacket costs $50.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "d6b89ae4-75c2-4d34-9a07-45e4bd1bd434",
+      "lesson": "Lesson 8 - Money",
+      "front": "buy",
+      "back": "comprar",
+      "example": "I want to buy these shoes.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "6a48ee50-6d66-41fb-892a-027dac188332",
+      "lesson": "Lesson 8 - Money",
+      "front": "need",
+      "back": "necesitar",
+      "example": "I need a new backpack for school.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "f49205f4-2ae4-46e0-80f8-386a55a82b39",
+      "lesson": "Lesson 8 - Money",
+      "front": "want",
+      "back": "querer / desear",
+      "example": "I want that bag.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "cdd44c85-e1bf-4d10-8ad7-38747190de91",
+      "lesson": "Lesson 8 - Money",
+      "front": "one hundred / one thousand",
+      "back": "cien / mil",
+      "example": "This car costs one thousand dollars.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e0813fe2-6c31-485e-8786-3cbebf48df53",
+      "lesson": "Lesson 8 - Money",
+      "front": "one million / one billion",
+      "back": "un millón / mil millones",
+      "example": "The company is worth one billion dollars.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "6f5adcbb-d782-4514-91ac-723f9ac5aa9a",
+      "lesson": "Lesson 8 - Money",
+      "front": "How much is this shirt?",
+      "back": "¿Cuánto sale esta camisa?",
+      "example": "How much is this shirt? It's $12.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "d8b7bce7-c74a-45b5-a55f-ff572803929b",
+      "lesson": "Lesson 8 - Money",
+      "front": "How much are those shoes?",
+      "back": "¿Cuánto salen esos zapatos?",
+      "example": "How much are those shoes? They're $25.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "399007f4-4c7b-49e6-adb2-917fe97a206b",
+      "lesson": "Lesson 8 - Money",
+      "front": "How much does the car cost?",
+      "back": "¿Cuánto cuesta el auto?",
+      "example": "How much does the car cost? It costs $9,000.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "bed01b68-2d8a-4e29-bc3f-00b5e25a2327",
+      "lesson": "Lesson 8 - Money",
+      "front": "Do you want to buy that car?",
+      "back": "¿Querés comprar ese auto?",
+      "example": "Do you want to buy that car? Yes, that car is cheap.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "9ab65437-07a2-4ece-8704-d91327a72c4a",
+      "lesson": "Lesson 8 - Money",
+      "front": "Excuse me, I'd like to buy some pants. How much do those cost?",
+      "back": "Disculpá, quisiera comprar unos pantalones. ¿Cuánto cuestan esos?",
+      "example": "A: Excuse me, I'd like to buy some pants. How much do those blue pants cost? B: Fifty dollars.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "fd399a54-1e74-46e1-979a-d6941d16276a",
+      "lesson": "Lesson 8 - Money",
+      "front": "table",
+      "back": "mesa",
+      "example": "Look at the table. It costs $399.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "9b010232-03af-477d-b1ef-6f4f59416e6d",
+      "lesson": "Lesson 8 - Money",
+      "front": "apple",
+      "back": "manzana",
+      "example": "The apple costs $1.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ac102d5b-8b82-43b4-9f2c-95356ca1f5f2",
+      "lesson": "Lesson 9 - Home",
+      "front": "house",
+      "back": "casa",
+      "example": "She lives in a house.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "9d453b55-68ba-41bb-b986-1999889714fb",
+      "lesson": "Lesson 9 - Home",
+      "front": "apartment (building)",
+      "back": "departamento / edificio de departamentos",
+      "example": "I live in an apartment in New York City.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "9a840259-7673-47c4-8039-2e24e96603d6",
+      "lesson": "Lesson 9 - Home",
+      "front": "bedroom",
+      "back": "dormitorio",
+      "example": "It only has one bedroom.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a3702c74-9933-4e30-a359-d07e92dc1600",
+      "lesson": "Lesson 9 - Home",
+      "front": "bathroom",
+      "back": "baño",
+      "example": "Where is the bathroom? It's next to the bedroom.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "377242bf-0ce6-4bb6-9b8e-435176f877c4",
+      "lesson": "Lesson 9 - Home",
+      "front": "closet",
+      "back": "placard / ropero",
+      "example": "Where is the closet? It's next to the bedroom.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "961399bb-4451-47c7-9434-c48a6cc00002",
+      "lesson": "Lesson 9 - Home",
+      "front": "living room",
+      "back": "living / sala de estar",
+      "example": "The living room is next to the kitchen.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2945985e-52d4-4076-bee9-b65feb5ee4d7",
+      "lesson": "Lesson 9 - Home",
+      "front": "kitchen",
+      "back": "cocina",
+      "example": "I like the kitchen though.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "94ff0de7-7922-403e-a9b7-fe9177f7da8f",
+      "lesson": "Lesson 9 - Home",
+      "front": "dining room",
+      "back": "comedor",
+      "example": "Where is the dining room? It's to the right of the kitchen.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7f138d93-007b-4965-846c-8deb312ff806",
+      "lesson": "Lesson 9 - Home",
+      "front": "laundry room",
+      "back": "lavadero",
+      "example": "The laundry room is next to the living room.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "a3b3df36-d194-40bc-955d-7cac0483564d",
+      "lesson": "Lesson 9 - Home",
+      "front": "family room",
+      "back": "sala familiar / living familiar",
+      "example": "The family room is next to the kitchen.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "34de4636-29a4-49d4-99b0-ae2c4af80007",
+      "lesson": "Lesson 9 - Home",
+      "front": "garage",
+      "back": "garaje",
+      "example": "Do you have a garage? No, most apartments don't have one.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "391cb2c9-b433-4965-b61c-b9452d239ec8",
+      "lesson": "Lesson 9 - Home",
+      "front": "stairs",
+      "back": "escalera",
+      "example": "The stairs go up to the next floor.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "10862f70-b6ce-4485-90aa-27023f689a94",
+      "lesson": "Lesson 9 - Home",
+      "front": "above",
+      "back": "arriba de / sobre",
+      "example": "The lamp is above the table.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "dfdf36ef-2c3f-4241-88b0-bf4dd83dc22b",
+      "lesson": "Lesson 9 - Home",
+      "front": "across from",
+      "back": "enfrente de",
+      "example": "The bank is across from the school.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "68a4506f-96c5-4b18-9982-421373a6998f",
+      "lesson": "Lesson 9 - Home",
+      "front": "below",
+      "back": "debajo de",
+      "example": "The shoes are below the bed.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "3ce41f20-1f40-4739-adad-229729552ee6",
+      "lesson": "Lesson 9 - Home",
+      "front": "next to",
+      "back": "al lado de",
+      "example": "The sofa is next to the window.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "1716d19d-5f27-46aa-bf0e-934ef0a5a67e",
+      "lesson": "Lesson 9 - Home",
+      "front": "to the left of",
+      "back": "a la izquierda de",
+      "example": "The pharmacy is to the left of the supermarket.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "688a5f03-9a23-4d8f-8467-52982f0d2151",
+      "lesson": "Lesson 9 - Home",
+      "front": "to the right of",
+      "back": "a la derecha de",
+      "example": "The kitchen is to the right of the living room.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "57669849-de67-4a3d-a73f-7c454f2bd458",
+      "lesson": "Lesson 9 - Home",
+      "front": "a / an",
+      "back": "un / una (a antes de sonido consonante, an antes de sonido vocálico)",
+      "example": "a house / an apartment",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "19bf8991-0319-477b-98b9-ee14c5554cd5",
+      "lesson": "Lesson 9 - Home",
+      "front": "Where do you live?",
+      "back": "¿Dónde vivís?",
+      "example": "Where do you live? - I live in an apartment in New York City.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "3d21e7a5-d4f6-4d33-a73e-51643d877e76",
+      "lesson": "Lesson 9 - Home",
+      "front": "I live in an apartment.",
+      "back": "Vivo en un departamento.",
+      "example": "I live in an apartment in New York City.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e6cf16a6-193e-4f4d-8ad5-3be8f8e6554e",
+      "lesson": "Lesson 9 - Home",
+      "front": "She lives in a house.",
+      "back": "Ella vive en una casa.",
+      "example": "Where does she live? She lives in a house.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "2a1e454e-f3fa-4aef-a2e1-99b1a08d2e2a",
+      "lesson": "Lesson 9 - Home",
+      "front": "Where is the bathroom?",
+      "back": "¿Dónde está el baño?",
+      "example": "Where is the bathroom? It's next to the bedroom.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4a8ead05-f154-45f1-8c29-d24b7b9001e9",
+      "lesson": "Lesson 9 - Home",
+      "front": "It's next to the bedroom.",
+      "back": "Está al lado del dormitorio.",
+      "example": "Where is the closet? It's next to the bedroom.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "ceddeb7a-3f7d-4c49-8761-9b549cc6c850",
+      "lesson": "Lesson 9 - Home",
+      "front": "Where is the dining room?",
+      "back": "¿Dónde está el comedor?",
+      "example": "Where is the dining room? It's to the right of the kitchen.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "8bd6fcf0-a330-41ab-8e28-48cf429e432a",
+      "lesson": "Lesson 9 - Home",
+      "front": "It's to the right of the kitchen.",
+      "back": "Está a la derecha de la cocina.",
+      "example": "Where is the dining room? It's to the right of the kitchen.",
+      "createdAt": "2026-08-10T21:14:57.981Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    }
+  ],
+  "reviews": []
+}

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+:root {
+  --bg: hsl(210 33% 99%);
+  --bg-elevated: hsl(0 0% 100%);
+  --bg-sunken: hsl(240 4.8% 95%);
+  --ink: hsl(240 10% 3.9%);
+  --ink-dim: hsl(240 3.8% 28.1%);
+  --ink-faint: hsl(240 4% 50%);
+  --line: hsl(240 5.9% 88%);
+  --line-strong: hsl(240 5.9% 78%);
+  --brand: hsl(330 82% 42%);
+  --brand-strong: hsl(330 82% 32%);
+  --brand-foreground: hsl(0 0% 100%);
+  --danger: hsl(0 72.22% 50.59%);
+  --danger-bg: hsl(0 72% 95%);
+  --success: #2f7a4f;
+  --success-bg: #e4f3ea;
+  --gold: #a8710a;
+  --gold-bg: #fbf0da;
+  --accent-purple: hsl(261 45% 38%);
+  --accent-lime: hsl(74 55% 45%);
+  --accent-maroon: hsl(337 65% 36%);
+  --accent-gold: hsl(37 90% 55%);
+
+  --radius: 0.6rem;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px -12px rgba(0, 0, 0, 0.16);
+  --font-body: "Segoe UI", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: hsl(240 8% 11%);
+  --bg-elevated: hsl(240 7% 16%);
+  --bg-sunken: hsl(240 8% 8%);
+  --ink: hsl(0 0% 98%);
+  --ink-dim: hsl(240 5% 74.9%);
+  --ink-faint: hsl(240 5% 55%);
+  --line: hsl(240 6% 24%);
+  --line-strong: hsl(240 6% 34%);
+  --brand: hsl(330 85% 68%);
+  --brand-strong: hsl(330 85% 78%);
+  --brand-foreground: hsl(330 55% 14%);
+  --danger: hsl(0 90% 75%);
+  --danger-bg: hsl(0 40% 14%);
+  --success: #7fe0ac;
+  --success-bg: #0f3324;
+  --gold: #e8b84b;
+  --gold-bg: #3a2d0f;
+  --accent-purple: hsl(261 55% 68%);
+  --accent-lime: hsl(74 55% 60%);
+  --accent-maroon: hsl(337 70% 62%);
+  --accent-gold: hsl(37 90% 65%);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 28px -14px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+::selection {
+  background: var(--brand);
+  color: var(--brand-foreground);
+}
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.flip-card {
+  perspective: 1200px;
+}
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-face {
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
