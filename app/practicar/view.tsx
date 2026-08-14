@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import type { Scenario } from "@/lib/scenarios";
 import { Button, Card, Field, inputClass } from "@/app/_components/ui";
 
-export function PracticarView({ scenario }: { scenario: Scenario }) {
+export function PracticarView({ scenario, onBack }: { scenario: Scenario; onBack: () => void }) {
   const [index, setIndex] = useState(0);
   const [answer, setAnswer] = useState("");
   const [revealed, setRevealed] = useState(false);
@@ -40,9 +39,9 @@ export function PracticarView({ scenario }: { scenario: Scenario }) {
           <p className="text-sm text-(--ink-faint)">Practicá de nuevo cuando quieras, o volvé a la lista de simulacros.</p>
           <div className="flex gap-2">
             <Button onClick={restart}>Practicar de nuevo</Button>
-            <Link href="/practicar">
-              <Button variant="secondary">Volver</Button>
-            </Link>
+            <Button variant="secondary" onClick={onBack}>
+              Volver
+            </Button>
           </div>
         </div>
       </Card>

@@ -34,6 +34,7 @@ export const KNOWN_LESSONS = [
   "Lesson 7 - Food II",
   "Lesson 8 - Money",
   "Lesson 9 - Home",
+  "Lesson 10 - Review",
 ];
 
 export interface CardInput {

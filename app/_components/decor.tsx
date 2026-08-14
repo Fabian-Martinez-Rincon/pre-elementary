@@ -4,61 +4,27 @@ export function Decor() {
       <div
         className="absolute rounded-full"
         style={{
-          top: "-18vmin",
-          right: "-14vmin",
-          width: "42vmin",
-          height: "42vmin",
-          background: "var(--accent-maroon)",
-          opacity: 0.28,
-          filter: "blur(40px)",
-        }}
-      />
-      <div
-        className="absolute rounded-full"
-        style={{
-          top: "-6vmin",
-          right: "8vmin",
-          width: "16vmin",
-          height: "16vmin",
-          background: "var(--accent-purple)",
-          opacity: 0.22,
-          filter: "blur(30px)",
-        }}
-      />
-      <div
-        className="absolute rounded-full"
-        style={{
-          bottom: "-20vmin",
-          left: "-16vmin",
-          width: "46vmin",
-          height: "46vmin",
+          top: "-20vmin",
+          right: "-16vmin",
+          width: "48vmin",
+          height: "48vmin",
           background: "var(--brand)",
-          opacity: 0.22,
-          filter: "blur(45px)",
+          opacity: 0.16,
+          filter: "blur(50px)",
+          animation: "drift-a 22s ease-in-out infinite",
         }}
       />
       <div
         className="absolute rounded-full"
         style={{
-          bottom: "4vmin",
-          left: "18vmin",
-          width: "18vmin",
-          height: "18vmin",
-          background: "var(--accent-lime)",
-          opacity: 0.25,
-          filter: "blur(30px)",
-        }}
-      />
-      <div
-        className="absolute rounded-full"
-        style={{
-          bottom: "-10vmin",
-          right: "-6vmin",
-          width: "20vmin",
-          height: "20vmin",
-          background: "var(--accent-gold)",
-          opacity: 0.22,
-          filter: "blur(35px)",
+          bottom: "-22vmin",
+          left: "-18vmin",
+          width: "40vmin",
+          height: "40vmin",
+          background: "var(--brand)",
+          opacity: 0.1,
+          filter: "blur(50px)",
+          animation: "drift-b 26s ease-in-out infinite",
         }}
       />
     </div>

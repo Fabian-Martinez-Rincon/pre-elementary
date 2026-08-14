@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { KNOWN_LESSONS, type Card as CardType } from "@/lib/flashcards";
-import { createCard, deleteCard, getFlashcardsData, updateCard } from "@/lib/flashcards-store";
+import { createCard, deleteCard, updateCard, useFlashcardsData } from "@/lib/flashcards-store";
 import { Button, Card, EmptyState, Field, inputClass } from "@/app/_components/ui";
 
 interface Draft {
@@ -16,31 +16,28 @@ function emptyDraft(lesson: string): Draft {
   return { lesson, front: "", back: "", example: "" };
 }
 
-export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: string }) {
-  // null = todavía no se cargó desde localStorage (recién disponible en el
-  // cliente, ver useEffect abajo).
-  const [cards, setCards] = useState<CardType[] | null>(null);
-  const [knownLessons, setKnownLessons] = useState<string[]>(KNOWN_LESSONS);
-  const [draft, setDraft] = useState<Draft>(emptyDraft(""));
+export function TarjetasView({
+  lessonFilter,
+  onLessonFilterChange,
+}: {
+  lessonFilter: string;
+  onLessonFilterChange: (lesson: string) => void;
+}) {
+  const data = useFlashcardsData();
+  const cards = data.cards;
+  const knownLessons = useMemo(() => Array.from(new Set([...KNOWN_LESSONS, ...cards.map((c) => c.lesson)])), [cards]);
+
+  const [draft, setDraft] = useState<Draft>(() => emptyDraft(""));
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editDraft, setEditDraft] = useState<Draft | null>(null);
-  const [lessonFilter, setLessonFilter] = useState(initialLessonFilter);
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    const data = getFlashcardsData();
-    const usedLessons = Array.from(new Set(data.cards.map((c) => c.lesson)));
-    const lessons = Array.from(new Set([...KNOWN_LESSONS, ...usedLessons]));
-    setCards(data.cards);
-    setKnownLessons(lessons);
-    setDraft(emptyDraft(lessons[0] ?? ""));
-  }, []);
+  const [visibleCount, setVisibleCount] = useState(20);
 
   const filtered = useMemo(() => {
-    return (cards ?? []).filter((c) => {
+    return cards.filter((c) => {
       if (lessonFilter && c.lesson !== lessonFilter) return false;
       if (search) {
         const q = search.toLowerCase();
@@ -50,7 +47,12 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
     });
   }, [cards, lessonFilter, search]);
 
-  if (cards === null) return null;
+  // Nada de useEffect para "resetear" esto cuando cambia el filtro: al
+  // acotar con slice, si el filtro nuevo tiene menos tarjetas que
+  // visibleCount simplemente se muestran todas, y "Mostrar más" reaparece
+  // solo si hace falta.
+  const shown = filtered.slice(0, visibleCount);
+  const remaining = filtered.length - shown.length;
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -61,8 +63,7 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
     }
     setSubmitting(true);
     try {
-      const card = createCard(draft);
-      setCards((prev) => [...(prev ?? []), card]);
+      createCard(draft);
       setDraft(emptyDraft(draft.lesson));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido.");
@@ -73,12 +74,10 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
 
   function handleDelete(id: string) {
     setDeletingId(id);
-    const prev = cards;
-    setCards((cs) => (cs ?? []).filter((c) => c.id !== id));
     try {
       deleteCard(id);
     } catch {
-      setCards(prev);
+      // la tarjeta ya no existía -- nada que revertir, el store sigue siendo la verdad.
     } finally {
       setDeletingId(null);
     }
@@ -93,8 +92,7 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
     if (!editDraft) return;
     setSubmitting(true);
     try {
-      const card = updateCard(id, editDraft);
-      setCards((prev) => (prev ?? []).map((c) => (c.id === id ? card : c)));
+      updateCard(id, editDraft);
       setEditingId(null);
       setEditDraft(null);
     } catch (err) {
@@ -160,7 +158,7 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
       </Card>
 
       <div className="flex flex-wrap items-center gap-2">
-        <select value={lessonFilter} onChange={(e) => setLessonFilter(e.target.value)} className={inputClass}>
+        <select value={lessonFilter} onChange={(e) => onLessonFilterChange(e.target.value)} className={inputClass}>
           <option value="">Todas las lecciones</option>
           {knownLessons.map((l) => (
             <option key={l} value={l}>
@@ -177,17 +175,17 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
       </div>
 
       <div>
-        <h2 className="mb-2 text-sm font-semibold text-foreground">
+        <h3 className="mb-2 text-sm font-semibold text-foreground">
           {filtered.length} tarjeta{filtered.length === 1 ? "" : "s"}
-        </h2>
+        </h3>
         {filtered.length === 0 ? (
           <EmptyState>No hay tarjetas que coincidan.</EmptyState>
         ) : (
-          <div className="flex flex-col gap-2">
-            {filtered.map((c) =>
-              editingId === c.id && editDraft ? (
-                <Card key={c.id}>
-                  <div className="flex flex-col gap-2">
+          <>
+            <div className="flex flex-col divide-y divide-(--line) overflow-hidden rounded-(--radius) border border-(--line) bg-(--bg-elevated)">
+              {shown.map((c) =>
+                editingId === c.id && editDraft ? (
+                  <div key={c.id} className="flex flex-col gap-2 p-3">
                     <input
                       list="lesson-names"
                       value={editDraft.lesson}
@@ -208,29 +206,46 @@ export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: str
                       </Button>
                     </div>
                   </div>
-                </Card>
-              ) : (
-                <Card key={c.id}>
-                  <div className="flex items-start justify-between gap-2">
-                    <div>
-                      <div className="text-xs text-(--ink-faint)">{c.lesson}</div>
-                      <div className="text-sm font-semibold text-foreground">{c.front}</div>
-                      <div className="text-sm text-(--ink-dim)">{c.back}</div>
-                      {c.example && <div className="mt-1 text-xs italic text-(--ink-faint)">&ldquo;{c.example}&rdquo;</div>}
+                ) : (
+                  <div key={c.id} className="group flex items-center justify-between gap-3 px-3 py-2 text-sm transition-colors hover:bg-(--bg-sunken)">
+                    <div className="min-w-0 flex-1 truncate" title={c.example || undefined}>
+                      <span className="font-medium text-foreground">{c.front}</span>
+                      <span className="mx-1.5 text-(--ink-faint)">→</span>
+                      <span className="text-(--ink-dim)">{c.back}</span>
+                      <span className="ml-2 hidden text-xs text-(--ink-faint) sm:inline">{c.lesson}</span>
                     </div>
-                    <div className="flex shrink-0 gap-1">
-                      <Button type="button" variant="secondary" onClick={() => startEdit(c)}>
+                    <div className="flex shrink-0 gap-1 opacity-100 transition-opacity sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100">
+                      <button
+                        type="button"
+                        onClick={() => startEdit(c)}
+                        className="rounded-md px-2 py-1 text-xs font-medium text-(--ink-dim) hover:text-foreground"
+                      >
                         Editar
-                      </Button>
-                      <Button type="button" variant="danger" disabled={deletingId === c.id} onClick={() => handleDelete(c.id)}>
+                      </button>
+                      <button
+                        type="button"
+                        disabled={deletingId === c.id}
+                        onClick={() => handleDelete(c.id)}
+                        className="rounded-md px-2 py-1 text-xs font-medium text-(--danger) hover:bg-(--danger-bg) disabled:opacity-50"
+                      >
                         Eliminar
-                      </Button>
+                      </button>
                     </div>
                   </div>
-                </Card>
-              )
+                )
+              )}
+            </div>
+            {remaining > 0 && (
+              <Button
+                type="button"
+                variant="secondary"
+                onClick={() => setVisibleCount((n) => n + 20)}
+                className="mt-3 w-full"
+              >
+                Mostrar {Math.min(20, remaining)} más ({remaining} restantes)
+              </Button>
             )}
-          </div>
+          </>
         )}
       </div>
     </div>

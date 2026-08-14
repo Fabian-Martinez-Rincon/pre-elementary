@@ -18,10 +18,6 @@
   --success-bg: #e4f3ea;
   --gold: #a8710a;
   --gold-bg: #fbf0da;
-  --accent-purple: hsl(261 45% 38%);
-  --accent-lime: hsl(74 55% 45%);
-  --accent-maroon: hsl(337 65% 36%);
-  --accent-gold: hsl(37 90% 55%);
 
   --radius: 0.6rem;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px -12px rgba(0, 0, 0, 0.16);
@@ -48,10 +44,6 @@
   --success-bg: #0f3324;
   --gold: #e8b84b;
   --gold-bg: #3a2d0f;
-  --accent-purple: hsl(261 55% 68%);
-  --accent-lime: hsl(74 55% 60%);
-  --accent-maroon: hsl(337 70% 62%);
-  --accent-gold: hsl(37 90% 65%);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 28px -14px rgba(0, 0, 0, 0.6);
   color-scheme: dark;
 }
@@ -61,6 +53,17 @@
   --color-foreground: var(--ink);
   --font-sans: var(--font-body);
   --font-mono: var(--font-mono);
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-body);
+}
+
+h1 {
+  font-family: var(--font-display), var(--font-body);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
 }
 
 * {
@@ -107,6 +110,29 @@ body {
   border-radius: 4px;
 }
 
+/* Fondo ambiental: drift lento y sutil, no distrae de la lectura. Se apaga
+   solo vía la regla global de prefers-reduced-motion de más arriba. */
+@keyframes drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-4%, 3%) scale(1.08); }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(3%, -4%) scale(1.1); }
+}
+
+/* Hints that a horizontally-scrollable container (mobile nav) has more content past the edge. */
+.scroll-fade-x {
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, black calc(100% - 28px), transparent);
+}
+@media (min-width: 640px) {
+  .scroll-fade-x {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
 input[type="number"] {
   appearance: textfield;
 }
@@ -131,4 +157,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+/* Toggle de dark mode: reveal circular animado a mano (ver theme-toggle.tsx),
+   así que se apaga el cross-fade por default de View Transitions y solo
+   queda nuestro clip-path. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }

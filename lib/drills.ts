@@ -80,8 +80,40 @@ export const DRILLS: Drill[] = [
       { id: "a6", prompt: "They ___ from the United States.", translation: "Son de Estados Unidos.", options: ["am", "is", "are"], answer: "are" },
     ],
   },
+  {
+    id: "what-are-you-doing-right-now",
+    title: "What are you doing right now?",
+    description: "Practicá el presente continuo (am / is / are + verbo-ing) para acciones que están pasando ahora.",
+    lesson: "Lesson 10 - Review",
+    questions: [
+      { id: "q1", prompt: "What ___ you doing right now?", translation: "¿Qué estás haciendo ahora mismo?", options: ["am", "is", "are"], answer: "are" },
+      { id: "q2", prompt: "What ___ they doing right now?", translation: "¿Qué están haciendo ellos ahora mismo?", options: ["am", "is", "are"], answer: "are" },
+      { id: "q3", prompt: "What ___ he doing right now?", translation: "¿Qué está haciendo él ahora mismo?", options: ["am", "is", "are"], answer: "is" },
+      { id: "q4", prompt: "What ___ she doing right now?", translation: "¿Qué está haciendo ella ahora mismo?", options: ["am", "is", "are"], answer: "is" },
+      { id: "a1", prompt: "I ___ studying right now.", translation: "Estoy estudiando ahora mismo.", options: ["am", "is", "are"], answer: "am" },
+      { id: "a2", prompt: "We ___ eating lunch right now.", translation: "Estamos almorzando ahora mismo.", options: ["am", "is", "are"], answer: "are" },
+      { id: "a3", prompt: "They ___ visiting friends right now.", translation: "Están visitando amigos ahora mismo.", options: ["am", "is", "are"], answer: "are" },
+      { id: "a4", prompt: "He ___ doing homework right now.", translation: "Él está haciendo la tarea ahora mismo.", options: ["am", "is", "are"], answer: "is" },
+      { id: "a5", prompt: "She ___ praying right now.", translation: "Ella está orando ahora mismo.", options: ["am", "is", "are"], answer: "is" },
+      { id: "a6", prompt: "I ___ relaxing right now.", translation: "Estoy relajándome ahora mismo.", options: ["am", "is", "are"], answer: "am" },
+    ],
+  },
+  {
+    id: "how-much-does-it-cost",
+    title: "How much does it cost?",
+    description: "Practicá singular vs. plural al preguntar y responder precios: is/are, does/do, it's/they're.",
+    lesson: "Lesson 10 - Review",
+    questions: [
+      { id: "q1", prompt: "How much ___ this shirt?", translation: "¿Cuánto cuesta esta camisa?", options: ["is", "are"], answer: "is" },
+      { id: "q2", prompt: "How much ___ those shoes?", translation: "¿Cuánto cuestan esos zapatos?", options: ["is", "are"], answer: "are" },
+      { id: "q3", prompt: "How much ___ the car cost?", translation: "¿Cuánto cuesta el auto?", options: ["does", "do"], answer: "does" },
+      { id: "q4", prompt: "How much ___ the apples cost?", translation: "¿Cuánto cuestan las manzanas?", options: ["does", "do"], answer: "do" },
+      { id: "q5", prompt: "How much ___ the phone cost?", translation: "¿Cuánto cuesta el teléfono?", options: ["does", "do"], answer: "does" },
+      { id: "a1", prompt: "___ $12.", translation: "Cuesta $12.", options: ["It's", "They're"], answer: "It's" },
+      { id: "a2", prompt: "___ $25.", translation: "Cuestan $25.", options: ["It's", "They're"], answer: "They're" },
+      { id: "a3", prompt: "It ___ five hundred dollars.", translation: "Cuesta quinientos dólares.", options: ["cost", "costs"], answer: "costs" },
+      { id: "a4", prompt: "They ___ five hundred dollars.", translation: "Cuestan quinientos dólares.", options: ["cost", "costs"], answer: "cost" },
+      { id: "a5", prompt: "___ $9,000.", translation: "Cuesta $9.000.", options: ["It's", "They're"], answer: "It's" },
+    ],
+  },
 ];
-
-export function getDrill(id: string): Drill | undefined {
-  return DRILLS.find((d) => d.id === id);
-}

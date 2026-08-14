@@ -25,9 +25,17 @@ export function RepasarView() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
+    // Deliberadamente NO usa el hook reactivo useFlashcardsData(): la cola
+    // se baraja una sola vez al entrar a la sección, así que una tarjeta
+    // nueva agregada en otra sección mientras hay una sesión en curso no
+    // debe reordenar/inyectarse en medio del repaso. El efecto (en vez de
+    // useState perezoso) evita además un mismatch de hidratación, ya que
+    // getFlashcardsData() lee localStorage (inexistente en el servidor).
+    /* eslint-disable react-hooks/set-state-in-effect */
     const data = getFlashcardsData();
     setTotalCards(data.cards.length);
     setQueue([...dueCards(data.cards)].sort(() => Math.random() - 0.5));
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 
   if (totalCards === null) return null;

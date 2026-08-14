@@ -2144,6 +2144,426 @@
         "easeFactor": 2.5,
         "lastReviewed": null
       }
+    },
+    {
+      "id": "03a0344e-f454-41ab-85dc-300fe38dbb20",
+      "lesson": "Lesson 10 - Review",
+      "front": "Could you spell your last name, please?",
+      "back": "¿Podrías deletrear tu apellido, por favor?",
+      "example": "Sure, it's M-A-R-T-I-N-E-Z.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "59a52381-29f1-41d5-b69c-3893724097b7",
+      "lesson": "Lesson 10 - Review",
+      "front": "Nice to meet you.",
+      "back": "Mucho gusto.",
+      "example": "Nice to meet you too!",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c6a39523-9e18-4a6c-a975-2530e64c7100",
+      "lesson": "Lesson 10 - Review",
+      "front": "because it's...",
+      "back": "porque es...",
+      "example": "I like reading because it's relaxing.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7fef86b0-6906-4039-a1f8-24925f9a1aba",
+      "lesson": "Lesson 10 - Review",
+      "front": "Why do you like...?",
+      "back": "¿Por qué te gusta...?",
+      "example": "Why do you like dancing?",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "f0d5a729-7c4b-4801-ba03-5c78d82ee037",
+      "lesson": "Lesson 10 - Review",
+      "front": "What are you doing right now?",
+      "back": "¿Qué estás haciendo ahora mismo?",
+      "example": "I am cleaning the house right now.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c9a0851f-6181-47ec-902d-bedeed1d56b8",
+      "lesson": "Lesson 10 - Review",
+      "front": "right now",
+      "back": "ahora mismo",
+      "example": "She is studying right now.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "dfd491b4-5c2f-45ce-96b0-cd1cd02ac76a",
+      "lesson": "Lesson 10 - Review",
+      "front": "Can I take your order?",
+      "back": "¿Puedo tomar tu pedido?",
+      "example": "Good afternoon! Can I take your order?",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e237f9ea-39a7-4592-b00f-07704466c5a4",
+      "lesson": "Lesson 10 - Review",
+      "front": "I'd like to order..., please.",
+      "back": "Quisiera pedir..., por favor.",
+      "example": "I'd like to order a burger, please.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "09e47fce-5e5c-4634-95b8-38d7cd399a24",
+      "lesson": "Lesson 10 - Review",
+      "front": "Could I have the bill, please?",
+      "back": "¿Me traés la cuenta, por favor?",
+      "example": "No, thanks. Could I have the bill, please?",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "903805f3-f503-4f5e-b4b4-51bdaffa68f3",
+      "lesson": "Lesson 10 - Review",
+      "front": "Can I bring you anything else?",
+      "back": "¿Te traigo algo más?",
+      "example": "Yes, a portion of apple pie, please.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "57aa05c8-e06f-45e5-b2d4-8207ac2eee49",
+      "lesson": "Lesson 10 - Review",
+      "front": "You can keep the change.",
+      "back": "Quedate con el vuelto.",
+      "example": "Thanks. You can keep the change.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "861f8fde-5b3b-4782-a33f-1c0ab10e38b9",
+      "lesson": "Lesson 10 - Review",
+      "front": "book a table",
+      "back": "reservar una mesa",
+      "example": "Can I book a table for one, please?",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "301f14dd-2f88-48ed-8854-78e42231c4c9",
+      "lesson": "Lesson 10 - Review",
+      "front": "main dish",
+      "back": "plato principal",
+      "example": "The main dish is chicken.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "12aca9db-b6db-4828-a556-6dd78d0d9b01",
+      "lesson": "Lesson 10 - Review",
+      "front": "side dish",
+      "back": "guarnición / acompañamiento",
+      "example": "Fries are a popular side dish.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "96d71725-d5d2-464a-9d95-de3ab0c58f88",
+      "lesson": "Lesson 10 - Review",
+      "front": "What are the ingredients for...?",
+      "back": "¿Cuáles son los ingredientes de...?",
+      "example": "What are the ingredients for bread?",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "4f2f9bc9-26db-47b0-a6d4-6238a79b9d48",
+      "lesson": "Lesson 10 - Review",
+      "front": "How do you make it?",
+      "back": "¿Cómo se hace?",
+      "example": "It's easy. First, mix the bananas with the eggs.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "86303c71-b442-4780-8e81-252605c11d5b",
+      "lesson": "Lesson 10 - Review",
+      "front": "First, ... Next, ... Then, ... Last, ...",
+      "back": "Primero,... Luego,... Después,... Por último,...",
+      "example": "First, mix the flour and salt. Then, cook on the grill.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "eaaaf602-6da2-4adf-9a76-ea40dea2239a",
+      "lesson": "Lesson 10 - Review",
+      "front": "How much is this shirt?",
+      "back": "¿Cuánto cuesta esta camisa?",
+      "example": "It's $12.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "f62a8ae2-1eee-4e32-a9ae-9564d8ed637c",
+      "lesson": "Lesson 10 - Review",
+      "front": "How much are those shoes?",
+      "back": "¿Cuánto cuestan esos zapatos?",
+      "example": "They're $25.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "7aa805a8-2870-4cde-bca7-9cafbbac9d6f",
+      "lesson": "Lesson 10 - Review",
+      "front": "How much does it cost?",
+      "back": "¿Cuánto cuesta?",
+      "example": "It costs five hundred dollars.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "3454ee7e-37c7-400c-95aa-55de6cec59c8",
+      "lesson": "Lesson 10 - Review",
+      "front": "expensive",
+      "back": "caro",
+      "example": "That car is too expensive for me.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "c6787f5d-1fea-4428-a9c9-64ea8cb4d7d2",
+      "lesson": "Lesson 10 - Review",
+      "front": "cheap",
+      "back": "barato",
+      "example": "How much are the red ones? They're cheap.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "9983dd81-0824-4672-93f4-37d1e8393d8b",
+      "lesson": "Lesson 10 - Review",
+      "front": "I need...",
+      "back": "Necesito...",
+      "example": "I need a new backpack for school.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "90308002-d029-4766-978a-dfdd2b49e7ae",
+      "lesson": "Lesson 10 - Review",
+      "front": "I'd like to buy...",
+      "back": "Quisiera comprar...",
+      "example": "I'd like to buy some pants.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "567b85f4-5957-4c19-9331-8aff80b6e07c",
+      "lesson": "Lesson 10 - Review",
+      "front": "Where do you live?",
+      "back": "¿Dónde vivís?",
+      "example": "I live in an apartment.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "e4c21263-f4c9-42ff-91ef-1c0686547765",
+      "lesson": "Lesson 10 - Review",
+      "front": "Where is the bathroom?",
+      "back": "¿Dónde está el baño?",
+      "example": "It's next to the bedroom.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "25eb47be-0cd9-4b1d-a3d6-cc8abdf59a4d",
+      "lesson": "Lesson 10 - Review",
+      "front": "next to",
+      "back": "al lado de",
+      "example": "The sofa is next to the window.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
+    },
+    {
+      "id": "cd4e80b6-9024-43a2-b4fe-5481081f98db",
+      "lesson": "Lesson 10 - Review",
+      "front": "across from",
+      "back": "enfrente de",
+      "example": "The bank is across from the school.",
+      "createdAt": "2026-08-14T12:00:00.000Z",
+      "srs": {
+        "dueDate": "2026-08-10",
+        "interval": 0,
+        "repetitions": 0,
+        "easeFactor": 2.5,
+        "lastReviewed": null
+      }
     }
   ],
   "reviews": []

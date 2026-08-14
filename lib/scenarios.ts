@@ -85,8 +85,54 @@ export const SCENARIOS: Scenario[] = [
       },
     ],
   },
+  {
+    id: "restaurante",
+    title: "En el restaurante",
+    description: "Simulacro completo de un pedido en un restaurante: reservar mesa, pedir comida y bebida, postre, la cuenta y despedirte.",
+    lesson: "Lesson 10 - Review",
+    steps: [
+      {
+        id: "llegada",
+        prompt: "Good afternoon! Can I help you?",
+        promptTranslation: "¡Buenas tardes! ¿En qué puedo ayudarte?",
+        hint: "Can I book a table for...? / Do you have a table for...?",
+        example: "Can I book a table for one, please?",
+      },
+      {
+        id: "menu",
+        prompt: "Yes. Come with me… Here you are.",
+        promptTranslation: "Sí. Vení conmigo... Acá tenés.",
+        hint: "Thanks. Can I have...?",
+        example: "Thanks. Can I have the menu?",
+      },
+      {
+        id: "pedido",
+        prompt: "The menu is on the table. Would you like anything to drink?",
+        promptTranslation: "El menú está en la mesa. ¿Querés algo para tomar?",
+        hint: "I want... / A ..., please.",
+        example: "I want roast beef with mashed potatoes. A coke, please.",
+      },
+      {
+        id: "postre",
+        prompt: "Can I bring you anything else?",
+        promptTranslation: "¿Te traigo algo más?",
+        hint: "Yes, I want a portion of...",
+        example: "Yes, I want a portion of apple pie.",
+      },
+      {
+        id: "cuenta",
+        prompt: "Anything else?",
+        promptTranslation: "¿Algo más?",
+        hint: "No, thanks. Could I have the bill, please?",
+        example: "No, thanks. Could I have the bill, please?",
+      },
+      {
+        id: "despedida",
+        prompt: "Here you are. Have a nice day.",
+        promptTranslation: "Acá tenés. Que tengas un buen día.",
+        hint: "Thanks. You can keep the change. / Have a nice day too.",
+        example: "Thanks. You can keep the change. Have a nice day.",
+      },
+    ],
+  },
 ];
-
-export function getScenario(id: string): Scenario | undefined {
-  return SCENARIOS.find((s) => s.id === id);
-}

@@ -1,21 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import type { FlashcardsData } from "@/lib/flashcards";
-import { getFlashcardsData } from "@/lib/flashcards-store";
+import { useFlashcardsData } from "@/lib/flashcards-store";
 import { cardsByLesson, computeStreak, retentionRate, reviewsPerDay } from "@/lib/stats";
 import { Card, EmptyState, StatTile } from "@/app/_components/ui";
 import { BarChart } from "@/components/charts/BarChart";
 
-export default function ProgresoPage() {
-  const [data, setData] = useState<FlashcardsData | null>(null);
-
-  useEffect(() => {
-    setData(getFlashcardsData());
-  }, []);
-
-  if (!data) return null;
-
+export function ProgresoSection() {
+  const data = useFlashcardsData();
   const streak = computeStreak(data.reviews);
   const retention = retentionRate(data.reviews);
   const perDay = reviewsPerDay(data.reviews, 30);
@@ -27,8 +18,8 @@ export default function ProgresoPage() {
   }));
 
   return (
-    <div className="mx-auto max-w-4xl px-3 py-4 lg:px-4">
-      <h1 className="mb-1 text-xl font-bold text-foreground">Progreso</h1>
+    <div className="mx-auto max-w-4xl px-3 lg:px-4">
+      <h2 className="mb-1 text-xl font-bold text-foreground">Progreso</h2>
       <p className="mb-4 text-sm text-(--ink-faint)">Cuánto repasaste y cuánto vas dominando cada lección.</p>
 
       {data.reviews.length === 0 ? (
@@ -57,7 +48,7 @@ export default function ProgresoPage() {
                     <li key={l.lesson}>
                       <div className="mb-1 flex items-center justify-between text-xs">
                         <span className="text-foreground">{l.lesson}</span>
-                        <span className="text-(--ink-faint)">
+                        <span className="tabular-nums text-(--ink-faint)">
                           {l.learned}/{l.total}
                         </span>
                       </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import type { Drill, DrillQuestion } from "@/lib/drills";
 import { Button, Card } from "@/app/_components/ui";
 
@@ -9,7 +8,7 @@ function shuffle<T>(items: T[]): T[] {
   return [...items].sort(() => Math.random() - 0.5);
 }
 
-export function DrillView({ drill }: { drill: Drill }) {
+export function DrillView({ drill, onBack }: { drill: Drill; onBack: () => void }) {
   const [questions] = useState<DrillQuestion[]>(() => shuffle(drill.questions));
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -52,9 +51,9 @@ export function DrillView({ drill }: { drill: Drill }) {
           </p>
           <div className="flex gap-2">
             <Button onClick={restart}>Practicar de nuevo</Button>
-            <Link href="/gramatica">
-              <Button variant="secondary">Volver</Button>
-            </Link>
+            <Button variant="secondary" onClick={onBack}>
+              Volver
+            </Button>
           </div>
         </div>
       </Card>

@@ -49,7 +49,7 @@ export function BarChart({ data, valueFormat = (v) => String(Math.round(v * 10) 
     <div className="relative w-full select-none">
       <svg viewBox={`0 0 ${VIEW_W} ${height}`} width="100%" height={height} preserveAspectRatio="none" className="block overflow-visible">
         <line x1={PAD.left} x2={VIEW_W - PAD.right} y1={baselineY} y2={baselineY} stroke="var(--line)" strokeWidth={1} />
-        <text x={PAD.left - 8} y={PAD.top} textAnchor="end" dominantBaseline="hanging" fontSize={10} fill="var(--ink-faint)">
+        <text x={PAD.left - 8} y={PAD.top} textAnchor="end" dominantBaseline="hanging" fontSize={10} fill="var(--ink-faint)" className="tabular-nums">
           {valueFormat(max)}
         </text>
 
@@ -72,7 +72,7 @@ export function BarChart({ data, valueFormat = (v) => String(Math.round(v * 10) 
                 <path d={roundedTopPath(x, y, barW, h, 4)} fill="var(--brand)" opacity={isHover ? 1 : 0.85} />
               )}
               {(isLast || isHover) && d.value > 0 && (
-                <text x={cx} y={y - 6} textAnchor="middle" fontSize={11} fontWeight={600} fill="var(--ink)">
+                <text x={cx} y={y - 6} textAnchor="middle" fontSize={11} fontWeight={600} fill="var(--ink)" className="tabular-nums">
                   {valueFormat(d.value)}
                 </text>
               )}
@@ -92,7 +92,7 @@ export function BarChart({ data, valueFormat = (v) => String(Math.round(v * 10) 
             transform: hover > data.length / 2 ? "translateX(-105%)" : "translateX(5%)",
           }}
         >
-          <div className="font-semibold text-foreground">{valueFormat(data[hover].value)}</div>
+          <div className="font-semibold tabular-nums text-foreground">{valueFormat(data[hover].value)}</div>
           <div className="text-(--ink-faint)">{data[hover].label}</div>
         </div>
       )}

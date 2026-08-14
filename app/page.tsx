@@ -1,87 +1,70 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { dueCards, todayStr, type FlashcardsData } from "@/lib/flashcards";
-import { getFlashcardsData } from "@/lib/flashcards-store";
-import { cardsByLesson, computeStreak, retentionRate } from "@/lib/stats";
-import { Button, Card, EmptyState, StatTile } from "@/app/_components/ui";
+import { useState } from "react";
+import { Reveal } from "./_components/reveal";
+import { ResumenSection } from "./resumen/section";
+import { RepasarSection } from "./repasar/section";
+import { PracticarSection } from "./practicar/section";
+import { GramaticaSection } from "./gramatica/section";
+import { TarjetasSection } from "./tarjetas/section";
+import { ClasesSection } from "./clases/section";
+import { ProgresoSection } from "./progreso/section";
 
-export default function ResumenPage() {
-  // Los datos viven en localStorage (solo el navegador los tiene), así que
-  // se cargan recién en el cliente -- data===null es el instante entre el
-  // primer render (SSR/hidratación) y el useEffect, no hay nada que mostrar
-  // todavía.
-  const [data, setData] = useState<FlashcardsData | null>(null);
+function scrollToTarjetas() {
+  document.getElementById("tarjetas")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
-  useEffect(() => {
-    setData(getFlashcardsData());
-  }, []);
-
-  if (!data) return null;
-
-  const today = todayStr();
-  const due = dueCards(data.cards, today);
-  const streak = computeStreak(data.reviews);
-  const retention = retentionRate(data.reviews);
-  const lessons = cardsByLesson(data.cards, today);
+export default function HomePage() {
+  const [lessonFilter, setLessonFilter] = useState("");
 
   return (
-    <div className="mx-auto max-w-4xl px-3 py-4 lg:px-4">
-      <h1 className="mb-1 text-xl font-bold text-foreground">Resumen</h1>
-      <p className="mb-4 text-sm text-(--ink-faint)">Tu progreso de inglés, de un vistazo.</p>
+    <>
+      <section id="resumen" className="scroll-mt-24 pt-6 pb-10">
+        <Reveal>
+          <ResumenSection />
+        </Reveal>
+      </section>
 
-      {data.cards.length === 0 ? (
-        <EmptyState>
-          Todavía no cargaste tarjetas.{" "}
-          <Link href="/tarjetas" className="font-medium text-(--brand) hover:underline">
-            Agregá tu primera tarjeta
-          </Link>{" "}
-          desde una de tus clases.
-        </EmptyState>
-      ) : (
-        <div className="flex flex-col gap-5">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <StatTile label="Para repasar hoy" value={String(due.length)} />
-            <StatTile label="Tarjetas totales" value={String(data.cards.length)} />
-            <StatTile label="Racha actual" value={`${streak.current}d`} sub={`Récord: ${streak.longest}d`} />
-            <StatTile label="Retención" value={retention !== null ? `${retention}%` : "—"} sub={`${data.reviews.length} repasos`} />
-          </div>
+      <section id="repasar" className="scroll-mt-24 border-t border-(--line) py-10">
+        <Reveal>
+          <RepasarSection />
+        </Reveal>
+      </section>
 
-          <Card title={due.length > 0 ? `${due.length} tarjeta${due.length === 1 ? "" : "s"} lista${due.length === 1 ? "" : "s"} para repasar` : "Estás al día"}>
-            {due.length > 0 ? (
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-sm text-(--ink-dim)">Dedicá unos minutos a repasar y afianzar lo que ya aprendiste.</p>
-                <Link href="/repasar">
-                  <Button>Repasar ahora</Button>
-                </Link>
-              </div>
-            ) : (
-              <p className="text-sm text-(--ink-faint)">No tenés tarjetas pendientes por ahora. Volvé más tarde o agregá contenido nuevo.</p>
-            )}
-          </Card>
+      <section id="practicar" className="scroll-mt-24 border-t border-(--line) py-10">
+        <Reveal>
+          <PracticarSection />
+        </Reveal>
+      </section>
 
-          <Card
-            title="Lecciones"
-            action={
-              <Link href="/clases" className="-my-2 -mr-2 rounded-md px-2 py-2 text-xs font-medium text-(--brand) hover:underline">
-                Ver todas
-              </Link>
-            }
-          >
-            <ul className="flex flex-col gap-2">
-              {lessons.slice(0, 5).map((l) => (
-                <li key={l.lesson} className="flex items-center justify-between gap-2 text-sm">
-                  <span className="text-foreground">{l.lesson}</span>
-                  <span className="text-(--ink-faint)">
-                    {l.learned}/{l.total} aprendidas
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </Card>
-        </div>
-      )}
-    </div>
+      <section id="gramatica" className="scroll-mt-24 border-t border-(--line) py-10">
+        <Reveal>
+          <GramaticaSection />
+        </Reveal>
+      </section>
+
+      <section id="tarjetas" className="scroll-mt-24 border-t border-(--line) py-10">
+        <Reveal>
+          <TarjetasSection lessonFilter={lessonFilter} onLessonFilterChange={setLessonFilter} />
+        </Reveal>
+      </section>
+
+      <section id="clases" className="scroll-mt-24 border-t border-(--line) py-10">
+        <Reveal>
+          <ClasesSection
+            onSelectLesson={(lesson) => {
+              setLessonFilter(lesson);
+              scrollToTarjetas();
+            }}
+          />
+        </Reveal>
+      </section>
+
+      <section id="progreso" className="scroll-mt-24 border-t border-(--line) py-10">
+        <Reveal>
+          <ProgresoSection />
+        </Reveal>
+      </section>
+    </>
   );
 }

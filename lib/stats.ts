@@ -1,5 +1,14 @@
-import type { Card, ReviewLogEntry } from "./flashcards";
+import { KNOWN_LESSONS, type Card, type ReviewLogEntry } from "./flashcards";
 import { addDays, todayStr } from "./srs";
+
+// "Lesson 10" ordena antes que "Lesson 2" en orden alfabético (localeCompare
+// compara como texto, no como número) -- se ordena por la posición real en
+// el programa de la materia en cambio, y cualquier lección "custom" que el
+// usuario haya escrito a mano cae al final, alfabética entre sí.
+function lessonOrder(lesson: string): number {
+  const i = KNOWN_LESSONS.indexOf(lesson);
+  return i === -1 ? KNOWN_LESSONS.length : i;
+}
 
 export interface DayCount {
   date: string;
@@ -68,5 +77,5 @@ export function cardsByLesson(cards: Card[], today = todayStr()): LessonSummary[
     if (c.srs.repetitions > 0) entry.learned += 1;
     map.set(c.lesson, entry);
   }
-  return Array.from(map.values()).sort((a, b) => a.lesson.localeCompare(b.lesson, "es"));
+  return Array.from(map.values()).sort((a, b) => lessonOrder(a.lesson) - lessonOrder(b.lesson) || a.lesson.localeCompare(b.lesson, "es"));
 }
