@@ -1,12 +1,21 @@
-import { getFlashcardsData } from "@/lib/flashcards";
+"use client";
+
+import { useEffect, useState } from "react";
+import type { FlashcardsData } from "@/lib/flashcards";
+import { getFlashcardsData } from "@/lib/flashcards-store";
 import { cardsByLesson, computeStreak, retentionRate, reviewsPerDay } from "@/lib/stats";
 import { Card, EmptyState, StatTile } from "@/app/_components/ui";
 import { BarChart } from "@/components/charts/BarChart";
 
-export const dynamic = "force-dynamic";
+export default function ProgresoPage() {
+  const [data, setData] = useState<FlashcardsData | null>(null);
 
-export default async function ProgresoPage() {
-  const data = await getFlashcardsData();
+  useEffect(() => {
+    setData(getFlashcardsData());
+  }, []);
+
+  if (!data) return null;
+
   const streak = computeStreak(data.reviews);
   const retention = retentionRate(data.reviews);
   const perDay = reviewsPerDay(data.reviews, 30);

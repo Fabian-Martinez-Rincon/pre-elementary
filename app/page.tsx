@@ -1,12 +1,25 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { dueCards, getFlashcardsData, todayStr } from "@/lib/flashcards";
+import { dueCards, todayStr, type FlashcardsData } from "@/lib/flashcards";
+import { getFlashcardsData } from "@/lib/flashcards-store";
 import { cardsByLesson, computeStreak, retentionRate } from "@/lib/stats";
 import { Button, Card, EmptyState, StatTile } from "@/app/_components/ui";
 
-export const dynamic = "force-dynamic";
+export default function ResumenPage() {
+  // Los datos viven en localStorage (solo el navegador los tiene), así que
+  // se cargan recién en el cliente -- data===null es el instante entre el
+  // primer render (SSR/hidratación) y el useEffect, no hay nada que mostrar
+  // todavía.
+  const [data, setData] = useState<FlashcardsData | null>(null);
 
-export default async function ResumenPage() {
-  const data = await getFlashcardsData();
+  useEffect(() => {
+    setData(getFlashcardsData());
+  }, []);
+
+  if (!data) return null;
+
   const today = todayStr();
   const due = dueCards(data.cards, today);
   const streak = computeStreak(data.reviews);

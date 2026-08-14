@@ -1,12 +1,21 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { getFlashcardsData, KNOWN_LESSONS, todayStr } from "@/lib/flashcards";
+import { KNOWN_LESSONS, todayStr, type FlashcardsData } from "@/lib/flashcards";
+import { getFlashcardsData } from "@/lib/flashcards-store";
 import { cardsByLesson } from "@/lib/stats";
 import { Card, EmptyState } from "@/app/_components/ui";
 
-export const dynamic = "force-dynamic";
+export default function ClasesPage() {
+  const [data, setData] = useState<FlashcardsData | null>(null);
 
-export default async function ClasesPage() {
-  const data = await getFlashcardsData();
+  useEffect(() => {
+    setData(getFlashcardsData());
+  }, []);
+
+  if (!data) return null;
+
   const today = todayStr();
   const summaries = cardsByLesson(data.cards, today);
   const summaryMap = new Map(summaries.map((s) => [s.lesson, s]));

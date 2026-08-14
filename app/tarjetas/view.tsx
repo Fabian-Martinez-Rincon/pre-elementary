@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import type { Card as CardType } from "@/lib/flashcards";
+import { useEffect, useMemo, useState } from "react";
+import { KNOWN_LESSONS, type Card as CardType } from "@/lib/flashcards";
+import { createCard, deleteCard, getFlashcardsData, updateCard } from "@/lib/flashcards-store";
 import { Button, Card, EmptyState, Field, inputClass } from "@/app/_components/ui";
 
 interface Draft {
@@ -15,17 +16,12 @@ function emptyDraft(lesson: string): Draft {
   return { lesson, front: "", back: "", example: "" };
 }
 
-export function TarjetasView({
-  initialCards,
-  knownLessons,
-  initialLessonFilter,
-}: {
-  initialCards: CardType[];
-  knownLessons: string[];
-  initialLessonFilter: string;
-}) {
-  const [cards, setCards] = useState(initialCards);
-  const [draft, setDraft] = useState<Draft>(emptyDraft(knownLessons[0] ?? ""));
+export function TarjetasView({ initialLessonFilter }: { initialLessonFilter: string }) {
+  // null = todavía no se cargó desde localStorage (recién disponible en el
+  // cliente, ver useEffect abajo).
+  const [cards, setCards] = useState<CardType[] | null>(null);
+  const [knownLessons, setKnownLessons] = useState<string[]>(KNOWN_LESSONS);
+  const [draft, setDraft] = useState<Draft>(emptyDraft(""));
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
@@ -34,8 +30,17 @@ export function TarjetasView({
   const [lessonFilter, setLessonFilter] = useState(initialLessonFilter);
   const [search, setSearch] = useState("");
 
+  useEffect(() => {
+    const data = getFlashcardsData();
+    const usedLessons = Array.from(new Set(data.cards.map((c) => c.lesson)));
+    const lessons = Array.from(new Set([...KNOWN_LESSONS, ...usedLessons]));
+    setCards(data.cards);
+    setKnownLessons(lessons);
+    setDraft(emptyDraft(lessons[0] ?? ""));
+  }, []);
+
   const filtered = useMemo(() => {
-    return cards.filter((c) => {
+    return (cards ?? []).filter((c) => {
       if (lessonFilter && c.lesson !== lessonFilter) return false;
       if (search) {
         const q = search.toLowerCase();
@@ -45,7 +50,9 @@ export function TarjetasView({
     });
   }, [cards, lessonFilter, search]);
 
-  async function handleSubmit(e: React.FormEvent) {
+  if (cards === null) return null;
+
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
     if (!draft.lesson.trim() || !draft.front.trim() || !draft.back.trim()) {
@@ -54,14 +61,8 @@ export function TarjetasView({
     }
     setSubmitting(true);
     try {
-      const res = await fetch("/api/cards", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(draft),
-      });
-      const json = await res.json();
-      if (!res.ok) throw new Error(json.error ?? "No se pudo guardar.");
-      setCards((prev) => [...prev, json.card]);
+      const card = createCard(draft);
+      setCards((prev) => [...(prev ?? []), card]);
       setDraft(emptyDraft(draft.lesson));
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error desconocido.");
@@ -70,13 +71,17 @@ export function TarjetasView({
     }
   }
 
-  async function handleDelete(id: string) {
+  function handleDelete(id: string) {
     setDeletingId(id);
     const prev = cards;
-    setCards((cs) => cs.filter((c) => c.id !== id));
-    const res = await fetch(`/api/cards/${id}`, { method: "DELETE" });
-    if (!res.ok) setCards(prev);
-    setDeletingId(null);
+    setCards((cs) => (cs ?? []).filter((c) => c.id !== id));
+    try {
+      deleteCard(id);
+    } catch {
+      setCards(prev);
+    } finally {
+      setDeletingId(null);
+    }
   }
 
   function startEdit(card: CardType) {
@@ -84,18 +89,12 @@ export function TarjetasView({
     setEditDraft({ lesson: card.lesson, front: card.front, back: card.back, example: card.example });
   }
 
-  async function saveEdit(id: string) {
+  function saveEdit(id: string) {
     if (!editDraft) return;
     setSubmitting(true);
     try {
-      const res = await fetch(`/api/cards/${id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(editDraft),
-      });
-      const json = await res.json();
-      if (!res.ok) throw new Error(json.error ?? "No se pudo guardar.");
-      setCards((prev) => prev.map((c) => (c.id === id ? json.card : c)));
+      const card = updateCard(id, editDraft);
+      setCards((prev) => (prev ?? []).map((c) => (c.id === id ? card : c)));
       setEditingId(null);
       setEditDraft(null);
     } catch (err) {

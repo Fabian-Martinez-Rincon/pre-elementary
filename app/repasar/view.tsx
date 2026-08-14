@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import type { Card as CardType } from "@/lib/flashcards";
+import { useEffect, useState } from "react";
+import { dueCards, type Card as CardType } from "@/lib/flashcards";
+import { getFlashcardsData, recordReview } from "@/lib/flashcards-store";
 import { GRADE_LABELS, type Grade } from "@/lib/srs";
-import { Button, Card } from "@/app/_components/ui";
+import { Button, Card, EmptyState } from "@/app/_components/ui";
 
 const GRADE_ORDER: Grade[] = ["again", "hard", "good", "easy"];
 const GRADE_COLOR: Record<Grade, string> = {
@@ -13,26 +14,39 @@ const GRADE_COLOR: Record<Grade, string> = {
   easy: "var(--success)",
 };
 
-export function RepasarView({ initialCards }: { initialCards: CardType[] }) {
-  // Barajamos una sola vez, en el cliente, para no repasar siempre en el mismo orden.
-  const [queue] = useState(() => [...initialCards].sort(() => Math.random() - 0.5));
+export function RepasarView() {
+  // null = todavía no se cargó desde localStorage (ver useEffect abajo).
+  const [totalCards, setTotalCards] = useState<number | null>(null);
+  // Barajada una sola vez al cargar, para no repasar siempre en el mismo orden.
+  const [queue, setQueue] = useState<CardType[]>([]);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [reviewed, setReviewed] = useState(0);
   const [submitting, setSubmitting] = useState(false);
 
+  useEffect(() => {
+    const data = getFlashcardsData();
+    setTotalCards(data.cards.length);
+    setQueue([...dueCards(data.cards)].sort(() => Math.random() - 0.5));
+  }, []);
+
+  if (totalCards === null) return null;
+
+  if (totalCards === 0) {
+    return <EmptyState>Todavía no cargaste tarjetas. Andá a Tarjetas para agregar vocabulario de tus clases.</EmptyState>;
+  }
+  if (queue.length === 0) {
+    return <EmptyState>No tenés tarjetas pendientes por hoy. ¡Buen trabajo! Volvé mañana.</EmptyState>;
+  }
+
   const card = queue[index];
   const done = index >= queue.length;
 
-  async function grade(g: Grade) {
+  function grade(g: Grade) {
     if (!card || submitting) return;
     setSubmitting(true);
     try {
-      await fetch("/api/reviews", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cardId: card.id, grade: g }),
-      });
+      recordReview(card.id, g);
     } finally {
       setReviewed((n) => n + 1);
       setFlipped(false);
