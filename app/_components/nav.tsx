@@ -3,13 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 
 export const NAV_LINKS = [
-  { id: "resumen", label: "Resumen" },
-  { id: "repasar", label: "Repasar" },
-  { id: "practicar", label: "Practicar" },
-  { id: "gramatica", label: "Gramática" },
-  { id: "tarjetas", label: "Tarjetas" },
-  { id: "clases", label: "Clases" },
-  { id: "progreso", label: "Progreso" },
+  { id: "resumen", label: "Resumen", fill: "var(--brand)", ink: "var(--brand-foreground)" },
+  { id: "repasar", label: "Repasar", fill: "var(--accent-repasar-solid)", ink: "#fff" },
+  { id: "practicar", label: "Practicar", fill: "var(--accent-practicar-solid)", ink: "#fff" },
+  { id: "gramatica", label: "Gramática", fill: "var(--accent-gramatica-solid)", ink: "#fff" },
+  { id: "tarjetas", label: "Tarjetas", fill: "var(--accent-tarjetas-solid)", ink: "#fff" },
+  { id: "clases", label: "Clases", fill: "var(--accent-clases-solid)", ink: "#fff" },
+  { id: "progreso", label: "Progreso", fill: "var(--accent-progreso-solid)", ink: "#fff" },
 ];
 
 export function Nav() {
@@ -45,15 +45,18 @@ export function Nav() {
     setIndicator({ left: el.offsetLeft, width: el.offsetWidth, ready: true });
   }, [active]);
 
+  const activeLink = NAV_LINKS.find((l) => l.id === active) ?? NAV_LINKS[0];
+
   return (
     <nav className="scroll-fade-x relative flex items-center gap-1 overflow-x-auto">
       <span
         aria-hidden
-        className="absolute inset-y-0 rounded-full bg-(--brand) transition-[transform,width] duration-300 ease-out"
+        className="absolute inset-y-0 rounded-full transition-[transform,width,background-color] duration-300 ease-out"
         style={{
           width: indicator.width,
           transform: `translateX(${indicator.left}px)`,
           opacity: indicator.ready ? 1 : 0,
+          backgroundColor: activeLink.fill,
         }}
       />
       {NAV_LINKS.map((link) => (
@@ -64,8 +67,9 @@ export function Nav() {
           }}
           href={`#${link.id}`}
           className={`relative z-10 shrink-0 rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
-            active === link.id ? "text-(--brand-foreground)" : "text-(--ink-dim) hover:text-foreground"
+            active === link.id ? "" : "text-(--ink-dim) hover:text-foreground"
           }`}
+          style={active === link.id ? { color: link.ink } : undefined}
         >
           {link.label}
         </a>

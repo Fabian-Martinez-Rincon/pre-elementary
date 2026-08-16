@@ -3,7 +3,7 @@
 import { dueCards, todayStr } from "@/lib/flashcards";
 import { useFlashcardsData } from "@/lib/flashcards-store";
 import { cardsByLesson, computeStreak, retentionRate } from "@/lib/stats";
-import { Card, EmptyState, LinkButton, StatTile } from "@/app/_components/ui";
+import { Card, EmptyState, LinkButton, SectionHeading, StatTile } from "@/app/_components/ui";
 import { HeroCardDemo } from "./hero-card-demo";
 
 export function ResumenSection() {
@@ -37,8 +37,12 @@ export function ResumenSection() {
         <HeroCardDemo />
       </div>
 
-      <h2 className="mb-1 text-xl font-bold text-foreground">Resumen</h2>
-      <p className="mb-4 text-sm text-(--ink-faint)">Tu progreso de inglés, de un vistazo.</p>
+      <SectionHeading
+        eyebrow="De un vistazo"
+        eyebrowColor="var(--brand)"
+        title="Resumen"
+        subtitle="Tu progreso de inglés, de un vistazo."
+      />
 
       {data.cards.length === 0 ? (
         <EmptyState>

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { dueCards, type Card as CardType } from "@/lib/flashcards";
 import { getFlashcardsData, recordReview } from "@/lib/flashcards-store";
 import { GRADE_LABELS, type Grade } from "@/lib/srs";
-import { Button, Card, EmptyState } from "@/app/_components/ui";
+import { Button, Card, EmptyState, ProgressBar } from "@/app/_components/ui";
 
 const GRADE_ORDER: Grade[] = ["again", "hard", "good", "easy"];
 const GRADE_COLOR: Record<Grade, string> = {
@@ -77,8 +77,11 @@ export function RepasarView() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="text-xs text-(--ink-faint)">
-        {index + 1} / {queue.length} · {card.lesson}
+      <div className="flex flex-col gap-1.5">
+        <div className="text-xs text-(--ink-faint)">
+          {index + 1} / {queue.length} · {card.lesson}
+        </div>
+        <ProgressBar pct={((index + 1) / queue.length) * 100} />
       </div>
 
       <div className={`flip-card h-56 cursor-pointer ${flipped ? "flipped" : ""}`} onClick={() => setFlipped((f) => !f)}>

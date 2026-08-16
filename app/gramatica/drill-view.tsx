@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Drill, DrillQuestion } from "@/lib/drills";
-import { Button, Card } from "@/app/_components/ui";
+import { Button, Card, ProgressBar } from "@/app/_components/ui";
 
 function shuffle<T>(items: T[]): T[] {
   return [...items].sort(() => Math.random() - 0.5);
@@ -62,8 +62,11 @@ export function DrillView({ drill, onBack }: { drill: Drill; onBack: () => void 
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="text-xs text-(--ink-faint)">
-        Pregunta {index + 1} / {questions.length} · {correctCount} correctas
+      <div className="flex flex-col gap-1.5">
+        <div className="text-xs text-(--ink-faint)">
+          Pregunta {index + 1} / {questions.length} · {correctCount} correctas
+        </div>
+        <ProgressBar pct={((index + 1) / questions.length) * 100} />
       </div>
 
       <Card>

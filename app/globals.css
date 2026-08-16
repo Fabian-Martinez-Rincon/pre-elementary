@@ -19,8 +19,30 @@
   --gold: #a8710a;
   --gold-bg: #fbf0da;
 
+  /* Acento por sección: cada área de la app tiene su propia identidad de color
+     (kicker, íconos), mientras el rosa de --brand queda reservado para la
+     acción principal (botones, progreso) en toda la app. */
+  --accent-repasar: hsl(14 75% 44%);
+  --accent-practicar: hsl(186 62% 34%);
+  --accent-gramatica: hsl(258 58% 54%);
+  --accent-tarjetas: hsl(38 82% 38%);
+  --accent-clases: hsl(212 68% 45%);
+  --accent-progreso: hsl(160 55% 32%);
+
+  /* Versiones "solid": no cambian con el tema (a diferencia de --accent-*, que
+     se aclaran en dark mode para funcionar como texto/ícono sobre fondo oscuro).
+     Estas se usan solo como relleno sólido del indicador de nav — siempre lo
+     bastante oscuras/saturadas para texto blanco encima en cualquier tema. */
+  --accent-repasar-solid: hsl(14 75% 44%);
+  --accent-practicar-solid: hsl(186 62% 34%);
+  --accent-gramatica-solid: hsl(258 58% 54%);
+  --accent-tarjetas-solid: hsl(38 82% 38%);
+  --accent-clases-solid: hsl(212 68% 45%);
+  --accent-progreso-solid: hsl(160 55% 32%);
+
   --radius: 0.6rem;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 8px 24px -12px rgba(0, 0, 0, 0.16);
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
   --font-body: "Segoe UI", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
   color-scheme: light;
@@ -44,6 +66,12 @@
   --success-bg: #0f3324;
   --gold: #e8b84b;
   --gold-bg: #3a2d0f;
+  --accent-repasar: hsl(16 85% 66%);
+  --accent-practicar: hsl(186 65% 62%);
+  --accent-gramatica: hsl(258 78% 78%);
+  --accent-tarjetas: hsl(40 88% 62%);
+  --accent-clases: hsl(212 82% 70%);
+  --accent-progreso: hsl(160 55% 60%);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 28px -14px rgba(0, 0, 0, 0.6);
   color-scheme: dark;
 }

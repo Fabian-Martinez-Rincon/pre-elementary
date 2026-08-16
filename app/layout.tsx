@@ -1,18 +1,10 @@
 import type { Metadata } from "next";
-import { Fraunces } from "next/font/google";
 import { ThemeToggle } from "./_components/theme-toggle";
 import { Nav } from "./_components/nav";
 import { InlineScript } from "./_components/inline-script";
 import { Decor } from "./_components/decor";
 import { CommandPalette, CommandPaletteButton } from "./_components/command-palette";
 import "./globals.css";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: ["500", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-display",
-});
 
 export const metadata: Metadata = {
   title: "Inglés flashcards",
@@ -35,10 +27,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       data-theme="light"
       suppressHydrationWarning
-      className={`h-full antialiased ${fraunces.variable}`}
+      className="h-full antialiased"
     >
       <head>
         <meta id="theme-color-meta" name="theme-color" content="#fbfcfd" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* next/font/google vía Turbopack no puede resolver su loader interno en este entorno
+            (paquete @vercel/turbopack-next ausente), así que se carga como <link> normal. Esto
+            vive en el único layout raíz de toda la app (App Router), no en cada página, así que
+            el warning de la regla no-page-custom-font (pensada para el Pages Router) no aplica. */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        />
         <InlineScript html={THEME_INIT_SCRIPT} />
       </head>
       <body className="relative flex min-h-full flex-col bg-background">

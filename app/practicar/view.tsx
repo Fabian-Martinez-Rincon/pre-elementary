@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Scenario } from "@/lib/scenarios";
-import { Button, Card, Field, inputClass } from "@/app/_components/ui";
+import { Button, Card, Field, ProgressBar, inputClass } from "@/app/_components/ui";
 
 export function PracticarView({ scenario, onBack }: { scenario: Scenario; onBack: () => void }) {
   const [index, setIndex] = useState(0);
@@ -50,8 +50,11 @@ export function PracticarView({ scenario, onBack }: { scenario: Scenario; onBack
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="text-xs text-(--ink-faint)">
-        Paso {index + 1} / {scenario.steps.length}
+      <div className="flex flex-col gap-1.5">
+        <div className="text-xs text-(--ink-faint)">
+          Paso {index + 1} / {scenario.steps.length}
+        </div>
+        <ProgressBar pct={((index + 1) / scenario.steps.length) * 100} />
       </div>
 
       <Card>

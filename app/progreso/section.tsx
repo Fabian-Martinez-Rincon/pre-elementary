@@ -2,7 +2,7 @@
 
 import { useFlashcardsData } from "@/lib/flashcards-store";
 import { cardsByLesson, computeStreak, retentionRate, reviewsPerDay } from "@/lib/stats";
-import { Card, EmptyState, StatTile } from "@/app/_components/ui";
+import { Card, EmptyState, ProgressBar, SectionHeading, StatTile } from "@/app/_components/ui";
 import { BarChart } from "@/components/charts/BarChart";
 
 export function ProgresoSection() {
@@ -19,8 +19,12 @@ export function ProgresoSection() {
 
   return (
     <div className="mx-auto max-w-4xl px-3 lg:px-4">
-      <h2 className="mb-1 text-xl font-bold text-foreground">Progreso</h2>
-      <p className="mb-4 text-sm text-(--ink-faint)">Cuánto repasaste y cuánto vas dominando cada lección.</p>
+      <SectionHeading
+        eyebrow="Tu evolución"
+        eyebrowColor="var(--accent-progreso)"
+        title="Progreso"
+        subtitle="Cuánto repasaste y cuánto vas dominando cada lección."
+      />
 
       {data.reviews.length === 0 ? (
         <EmptyState>Repasá tarjetas en la sección Repasar para empezar a ver estadísticas acá.</EmptyState>
@@ -52,9 +56,7 @@ export function ProgresoSection() {
                           {l.learned}/{l.total}
                         </span>
                       </div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-(--bg-sunken)">
-                        <div className="h-full rounded-full bg-(--brand)" style={{ width: `${pct}%` }} />
-                      </div>
+                      <ProgressBar pct={pct} />
                     </li>
                   );
                 })}

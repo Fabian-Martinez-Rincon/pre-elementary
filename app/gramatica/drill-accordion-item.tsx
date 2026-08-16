@@ -3,23 +3,41 @@
 import { useState } from "react";
 import Image from "next/image";
 import type { Drill } from "@/lib/drills";
-import { Card } from "@/app/_components/ui";
+import { Badge, Card, ChevronIcon, IconCircle } from "@/app/_components/ui";
 import { DrillView } from "./drill-view";
+
+function PencilIcon() {
+  return (
+    <svg aria-hidden viewBox="0 0 20 20" fill="none" className="h-4.5 w-4.5">
+      <path
+        d="m13.5 3.5 3 3L7.5 15.5 4 16.5l1-3.5 8.5-9.5Z"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export function DrillAccordionItem({ drill }: { drill: Drill }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card className={open ? "" : "transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lg"}>
-      <button type="button" onClick={() => setOpen((o) => !o)} className="flex w-full items-center justify-between gap-2 text-left">
-        <div>
+    <Card interactive={!open}>
+      <button type="button" onClick={() => setOpen((o) => !o)} className="flex w-full items-center gap-3 text-left">
+        <IconCircle color="var(--accent-gramatica)">
+          <PencilIcon />
+        </IconCircle>
+        <div className="min-w-0 flex-1">
           <div className="text-sm font-semibold text-foreground">{drill.title}</div>
           <div className="text-xs text-(--ink-faint)">{drill.description}</div>
           <div className="mt-1 text-xs text-(--ink-faint)">{drill.lesson}</div>
         </div>
-        <span className="shrink-0 text-xs font-medium text-(--ink-faint)">
-          {open ? "Cerrar ↑" : `${drill.questions.length} preguntas`}
-        </span>
+        <div className="flex shrink-0 items-center gap-2">
+          <Badge>{drill.questions.length} preguntas</Badge>
+          <ChevronIcon open={open} />
+        </div>
       </button>
 
       {open && (

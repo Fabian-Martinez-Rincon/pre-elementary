@@ -3,20 +3,40 @@
 import { useState } from "react";
 import Image from "next/image";
 import type { Scenario } from "@/lib/scenarios";
-import { Card } from "@/app/_components/ui";
+import { Badge, Card, ChevronIcon, IconCircle } from "@/app/_components/ui";
 import { PracticarView } from "./view";
+
+function ChatIcon() {
+  return (
+    <svg aria-hidden viewBox="0 0 20 20" fill="none" className="h-4.5 w-4.5">
+      <path
+        d="M3 9.5c0-3.31 3.13-6 7-6s7 2.69 7 6-3.13 6-7 6c-.77 0-1.51-.1-2.2-.3L4 17l1.06-3.18C3.77 12.7 3 11.17 3 9.5Z"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export function ScenarioAccordionItem({ scenario }: { scenario: Scenario }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Card className={open ? "" : "transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-lg"}>
-      <button type="button" onClick={() => setOpen((o) => !o)} className="flex w-full items-center justify-between gap-2 text-left">
-        <div>
+    <Card interactive={!open}>
+      <button type="button" onClick={() => setOpen((o) => !o)} className="flex w-full items-center gap-3 text-left">
+        <IconCircle color="var(--accent-practicar)">
+          <ChatIcon />
+        </IconCircle>
+        <div className="min-w-0 flex-1">
           <div className="text-sm font-semibold text-foreground">{scenario.title}</div>
           <div className="text-xs text-(--ink-faint)">{scenario.description}</div>
         </div>
-        <span className="shrink-0 text-xs font-medium text-(--ink-faint)">{open ? "Cerrar ↑" : `${scenario.steps.length} pasos`}</span>
+        <div className="flex shrink-0 items-center gap-2">
+          <Badge>{scenario.steps.length} pasos</Badge>
+          <ChevronIcon open={open} />
+        </div>
       </button>
 
       {open && (
